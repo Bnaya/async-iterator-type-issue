@@ -1,0 +1,25 @@
+{
+    "compilerOptions": {
+        "module": "commonjs",
+        "target": "esnext",
+        "noImplicitAny": true,
+        "noImplicitThis": true,
+        "strictNullChecks": false,
+        "noImplicitReturns": true,
+        "noFallthroughCasesInSwitch": true,
+        "forceConsistentCasingInFileNames": true,
+        "pretty": true,
+        "lib": [
+            "esnext"
+        ],
+        "sourceMap": true,
+        "outDir": "dist",
+        "types": [
+          "@types/aws-sdk",
+          "@types/node"
+        ]
+    },
+    "include": [
+        "src/**/*"
+    ]
+}

@@ -1,0 +1,24 @@
+{
+  "engines": {
+    "node": ">=7.4.0"
+  },
+  "name": "s3-async-iterator",
+  "private": true,
+  "version": "0.0.1",
+  "repository": {},
+  "dependencies": {
+    "aws-sdk": "^2.7.27",
+    "source-map-support": "^0.4.10"
+  },
+  "devDependencies": {
+    "@types/aws-sdk": "^0.0.42",
+    "@types/node": "^7.0.2",
+    "ts-node": "^2.0.0",
+    "tslint": "^4.3.1",
+    "typescript": "next"
+  },
+  "scripts": {
+    "start": "tsc",
+    "watch": "tsc -w"
+  }
+}
