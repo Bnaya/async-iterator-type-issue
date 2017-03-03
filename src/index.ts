@@ -17,7 +17,7 @@ class FooAsyncIterable implements AsyncIterable<string> {
 
 const fooBucket2: AsyncIterable<string> = {
   [Symbol.asyncIterator]() {
-    return new FooAsyncIterator()
+    return new FooAsyncIterator();
   }
 };
 
@@ -25,11 +25,15 @@ const fooAsyncIterable = new FooAsyncIterable();
 
 async function foo() {
 
+  // no type error here
   for await (const s3obj of fooBucket2) {
 
   }
 
-  // why error ????
+  // fooAsyncIterable has type error:
+  /*
+  [ts] The type returned by the 'next()' method of an iterator must have a 'value' property.
+  */
   for await (const s3obj of fooAsyncIterable) {
 
   }
